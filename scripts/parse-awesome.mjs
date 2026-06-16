@@ -140,12 +140,14 @@ for (const raw of lines) {
 
   let desc = line
     .slice(endIdx)
-    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
-    .replace(/!\[[^\]]*\]\[[^\]]*\]/g, "")
-    .replace(/\[!\[[^\]]*\]\([^)]*\)\]\([^)]*\)/g, "")
-    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
-    .replace(/\[([^\]]+)\]\[[^\]]*\]/g, "$1")
-    .replace(/[*`]/g, "")
+    .replace(/\[!\[[^\]]*\]\[[^\]]*\]\]\([^)]*\)/g, "") // [![alt][ref]](url)
+    .replace(/\[!\[[^\]]*\]\([^)]*\)\]\([^)]*\)/g, "") // [![alt](src)](url)
+    .replace(/!\[[^\]]*\]\[[^\]]*\]/g, "") // ![alt][ref]
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, "") // ![alt](src)
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1") // [text](url) -> text (incl empty)
+    .replace(/\[([^\]]*)\]\[[^\]]*\]/g, "$1") // [text][ref] -> text
+    .replace(/\((?:https?:)?\/\/[^)]*\)/g, "") // stray (url)
+    .replace(/[*`[\]]/g, "") // leftover emphasis / brackets
     .replace(/^\s*[-–—:]\s*/, "")
     .replace(/\s+/g, " ")
     .trim();

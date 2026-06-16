@@ -1,0 +1,13 @@
+[
+  {
+    "id": "keyholdr",
+    "name": "Keyholdr",
+    "url": "https://github.com/OlixIgnacious/keyholdr",
+    "description": "A tiny native menu-bar vault for your API keys and secrets — biometric-gated, hardware-backed storage with a terminal companion for the command line.",
+    "category": "security-tools",
+    "tags": ["api keys", "secrets", "menu bar", "native"],
+    "badges": ["freeware", "native"],
+    "featured": true,
+    "price": "free"
+  }
+]
