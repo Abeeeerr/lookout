@@ -5,7 +5,7 @@ import { MacGuy } from "./MacGuy";
 import styles from "./Hero.module.css";
 
 const MARQUEE =
-  "★ Spot the best apps for your Mac ★ 8 categories ★ hand-picked ★ open-source friendly ★ 100% fresh ";
+  "★ Spot the best apps for your Mac ★ 1,200+ picks ★ 26 categories ★ open-source friendly ★ updated from awesome-mac ";
 
 /** The main "hello" window: poster header + a Finder-style shelf that holds
  *  the category folders (passed as children) + a status footer. */

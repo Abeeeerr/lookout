@@ -1,10 +1,259 @@
 [
-  { "id": "dev", "name": "Developer Tools", "icon": "folder", "order": 1 },
-  { "id": "utilities", "name": "Utilities", "icon": "folder", "order": 2 },
-  { "id": "design", "name": "Design & Product", "icon": "folder", "order": 3 },
-  { "id": "writing", "name": "Reading & Writing", "icon": "folder", "order": 4 },
-  { "id": "ai", "name": "AI Tools", "icon": "folder", "order": 5 },
-  { "id": "av", "name": "Audio & Video", "icon": "folder", "order": 6 },
-  { "id": "browsers", "name": "Browsers", "icon": "folder", "order": 7 },
-  { "id": "security", "name": "Security", "icon": "folder", "order": 8 }
+  {
+    "id": "reading-and-writing-tools",
+    "name": "Reading and Writing Tools",
+    "icon": "✍️",
+    "color": "var(--imac-bondi)",
+    "order": 1,
+    "subcategories": [
+      "Text Editors",
+      "Office",
+      "Markdown Tools",
+      "Note-taking",
+      "Journaling",
+      "Writing",
+      "Ebooks",
+      "RSS",
+      "Others"
+    ]
+  },
+  {
+    "id": "developer-tools",
+    "name": "Developer Tools",
+    "icon": "🛠",
+    "color": "var(--imac-tangerine)",
+    "order": 2,
+    "subcategories": [
+      "IDEs",
+      "Developer Utilities",
+      "Regular Expression Editors",
+      "API Development and Analysis",
+      "Network Analysis",
+      "Frameworks For Hybrid Applications",
+      "Version Control",
+      "Virtualization",
+      "Databases"
+    ]
+  },
+  {
+    "id": "terminal-apps",
+    "name": "Terminal Apps",
+    "icon": "🛠",
+    "color": "var(--imac-strawberry)",
+    "order": 3,
+    "subcategories": []
+  },
+  {
+    "id": "design-and-product",
+    "name": "Design and Product",
+    "icon": "🎨",
+    "color": "var(--imac-grape)",
+    "order": 4,
+    "subcategories": [
+      "Design Tools",
+      "Prototyping and Mind-Mapping Tools",
+      "Screenshot Tools",
+      "Screen Recording",
+      "Other Tools"
+    ]
+  },
+  {
+    "id": "ai-tools",
+    "name": "AI Tools",
+    "icon": "🤖",
+    "color": "var(--imac-lime)",
+    "order": 5,
+    "subcategories": []
+  },
+  {
+    "id": "communication",
+    "name": "Communication",
+    "icon": "✉️",
+    "color": "var(--six-red)",
+    "order": 6,
+    "subcategories": [
+      "Collaboration and Team Tools",
+      "Email Clients",
+      "File Sharing"
+    ]
+  },
+  {
+    "id": "data-recovery-tools",
+    "name": "Data Recovery Tools",
+    "icon": "🛟",
+    "color": "var(--six-blue)",
+    "order": 7,
+    "subcategories": []
+  },
+  {
+    "id": "audio-and-video-tools",
+    "name": "Audio and Video Tools",
+    "icon": "🎬",
+    "color": "var(--six-purple)",
+    "order": 8,
+    "subcategories": [
+      "Audio Record and Process"
+    ]
+  },
+  {
+    "id": "download-management-tools",
+    "name": "Download Management Tools",
+    "icon": "⬇️",
+    "color": "var(--six-green)",
+    "order": 9,
+    "subcategories": []
+  },
+  {
+    "id": "cloud-storage",
+    "name": "Cloud Storage",
+    "icon": "☁️",
+    "color": "var(--six-orange)",
+    "order": 10,
+    "subcategories": []
+  },
+  {
+    "id": "input-methods",
+    "name": "Input Methods",
+    "icon": "⌨️",
+    "color": "var(--imac-bondi)",
+    "order": 11,
+    "subcategories": []
+  },
+  {
+    "id": "voice-to-text",
+    "name": "Voice-to-Text",
+    "icon": "✍️",
+    "color": "var(--imac-tangerine)",
+    "order": 12,
+    "subcategories": []
+  },
+  {
+    "id": "browsers",
+    "name": "Browsers",
+    "icon": "🌐",
+    "color": "var(--imac-strawberry)",
+    "order": 13,
+    "subcategories": []
+  },
+  {
+    "id": "translation-tools",
+    "name": "Translation Tools",
+    "icon": "🌍",
+    "color": "var(--imac-grape)",
+    "order": 14,
+    "subcategories": []
+  },
+  {
+    "id": "education",
+    "name": "Education",
+    "icon": "🎓",
+    "color": "var(--imac-lime)",
+    "order": 15,
+    "subcategories": []
+  },
+  {
+    "id": "finance",
+    "name": "Finance",
+    "icon": "💰",
+    "color": "var(--six-red)",
+    "order": 16,
+    "subcategories": []
+  },
+  {
+    "id": "encryption",
+    "name": "Encryption",
+    "icon": "🔐",
+    "color": "var(--six-blue)",
+    "order": 17,
+    "subcategories": []
+  },
+  {
+    "id": "security-tools",
+    "name": "Security Tools",
+    "icon": "🔒",
+    "color": "var(--six-purple)",
+    "order": 18,
+    "subcategories": []
+  },
+  {
+    "id": "proxy-and-vpn-tools",
+    "name": "Proxy and VPN Tools",
+    "icon": "🛡",
+    "color": "var(--six-green)",
+    "order": 19,
+    "subcategories": []
+  },
+  {
+    "id": "utilities",
+    "name": "Utilities",
+    "icon": "🧰",
+    "color": "var(--six-orange)",
+    "order": 20,
+    "subcategories": [
+      "Clipboard Tools",
+      "Menu Bar Tools",
+      "Cleanup and Uninstall",
+      "File Organization Tools",
+      "General Tools",
+      "To-Do Lists",
+      "Productivity",
+      "Window Management",
+      "Password Management",
+      "Finder Tools",
+      "Quality of Life Improvements",
+      "System Related Tools"
+    ]
+  },
+  {
+    "id": "gaming-software",
+    "name": "Gaming Software",
+    "icon": "🎮",
+    "color": "var(--imac-bondi)",
+    "order": 21,
+    "subcategories": []
+  },
+  {
+    "id": "remote-login-software",
+    "name": "Remote Login Software",
+    "icon": "🖥",
+    "color": "var(--imac-tangerine)",
+    "order": 22,
+    "subcategories": []
+  },
+  {
+    "id": "quicklook-plugins",
+    "name": "QuickLook Plugins",
+    "icon": "👁",
+    "color": "var(--imac-strawberry)",
+    "order": 23,
+    "subcategories": []
+  },
+  {
+    "id": "third-party-app-markets",
+    "name": "Third Party App Markets",
+    "icon": "🛍",
+    "color": "var(--imac-grape)",
+    "order": 24,
+    "subcategories": [
+      "Package Managers"
+    ]
+  },
+  {
+    "id": "mac-app-download-sites",
+    "name": "Mac App Download Sites",
+    "icon": "⬇️",
+    "color": "var(--imac-lime)",
+    "order": 25,
+    "subcategories": [
+      "Genuine Sites"
+    ]
+  },
+  {
+    "id": "podcasts",
+    "name": "Podcasts",
+    "icon": "🎧",
+    "color": "var(--six-red)",
+    "order": 26,
+    "subcategories": []
+  }
 ]

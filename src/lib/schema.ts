@@ -21,7 +21,8 @@ export type App = {
 export type Category = {
   id: string;
   name: string;
-  icon: string; // folder icon variant
+  icon: string; // emoji glyph
+  color: string; // CSS color (var) for the folder
   subcategories?: string[];
   order: number; // desktop layout order
 };
