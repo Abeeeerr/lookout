@@ -1,0 +1,270 @@
+[
+  {
+    "id": "vscode",
+    "name": "Visual Studio Code",
+    "url": "https://code.visualstudio.com",
+    "description": "Lightweight but powerful source-code editor with a huge extension ecosystem.",
+    "category": "dev",
+    "tags": ["editor", "ide"],
+    "badges": ["open-source", "freeware"],
+    "featured": true,
+    "price": "open-source"
+  },
+  {
+    "id": "iterm2",
+    "name": "iTerm2",
+    "url": "https://iterm2.com",
+    "description": "A terminal replacement for macOS with split panes, search, and autocomplete.",
+    "category": "dev",
+    "tags": ["terminal"],
+    "badges": ["open-source", "freeware"],
+    "price": "open-source"
+  },
+  {
+    "id": "warp",
+    "name": "Warp",
+    "url": "https://www.warp.dev",
+    "description": "A modern, Rust-based terminal with AI and collaborative features.",
+    "category": "dev",
+    "tags": ["terminal", "ai"],
+    "badges": ["freeware"],
+    "price": "freemium"
+  },
+  {
+    "id": "tower",
+    "name": "Tower",
+    "url": "https://www.git-tower.com",
+    "description": "A polished Git client that makes version control approachable.",
+    "category": "dev",
+    "tags": ["git", "version control"],
+    "badges": [],
+    "price": "paid"
+  },
+  {
+    "id": "raycast",
+    "name": "Raycast",
+    "url": "https://www.raycast.com",
+    "description": "A blazingly fast launcher to control your tools with a few keystrokes.",
+    "category": "utilities",
+    "tags": ["launcher", "productivity"],
+    "badges": ["freeware"],
+    "featured": true,
+    "price": "freemium"
+  },
+  {
+    "id": "rectangle",
+    "name": "Rectangle",
+    "url": "https://rectangleapp.com",
+    "description": "Move and resize windows using keyboard shortcuts or snap areas.",
+    "category": "utilities",
+    "tags": ["window management"],
+    "badges": ["open-source", "freeware"],
+    "price": "open-source"
+  },
+  {
+    "id": "alfred",
+    "name": "Alfred",
+    "url": "https://www.alfredapp.com",
+    "description": "A keyboard-driven launcher with powerful workflows and clipboard history.",
+    "category": "utilities",
+    "tags": ["launcher", "automation"],
+    "badges": ["freeware"],
+    "price": "freemium"
+  },
+  {
+    "id": "unarchiver",
+    "name": "The Unarchiver",
+    "url": "https://theunarchiver.com",
+    "description": "Opens far more archive formats than the built-in macOS tool.",
+    "category": "utilities",
+    "tags": ["archive", "files"],
+    "badges": ["freeware"],
+    "price": "free"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "url": "https://www.figma.com",
+    "description": "Collaborative interface design and prototyping in real time.",
+    "category": "design",
+    "tags": ["ui", "prototyping"],
+    "badges": [],
+    "featured": true,
+    "price": "freemium"
+  },
+  {
+    "id": "pixelmator",
+    "name": "Pixelmator Pro",
+    "url": "https://www.pixelmator.com/pro",
+    "description": "A gorgeous, native image editor with machine-learning-powered tools.",
+    "category": "design",
+    "tags": ["image editor", "native"],
+    "badges": ["native", "app-store"],
+    "price": "paid"
+  },
+  {
+    "id": "sip",
+    "name": "Sip",
+    "url": "https://sipapp.io",
+    "description": "A delightful color picker and palette manager for designers.",
+    "category": "design",
+    "tags": ["color", "menu bar"],
+    "badges": ["native"],
+    "price": "freemium"
+  },
+  {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "url": "https://obsidian.md",
+    "description": "A local-first knowledge base that works on plain-text Markdown files.",
+    "category": "writing",
+    "tags": ["notes", "markdown"],
+    "badges": ["freeware"],
+    "featured": true,
+    "price": "freemium"
+  },
+  {
+    "id": "bear",
+    "name": "Bear",
+    "url": "https://bear.app",
+    "description": "A beautiful, flexible note-taking app with Markdown and tagging.",
+    "category": "writing",
+    "tags": ["notes", "markdown", "native"],
+    "badges": ["native", "app-store"],
+    "price": "freemium"
+  },
+  {
+    "id": "iawriter",
+    "name": "iA Writer",
+    "url": "https://ia.net/writer",
+    "description": "A distraction-free writing app focused on clarity and typography.",
+    "category": "writing",
+    "tags": ["writing", "markdown"],
+    "badges": ["app-store"],
+    "price": "paid"
+  },
+  {
+    "id": "claude",
+    "name": "Claude",
+    "url": "https://claude.ai/download",
+    "description": "Anthropic's AI assistant as a native Mac app for writing, coding, and analysis.",
+    "category": "ai",
+    "tags": ["assistant", "chat", "native"],
+    "badges": ["native", "freeware"],
+    "featured": true,
+    "price": "freemium"
+  },
+  {
+    "id": "ollama",
+    "name": "Ollama",
+    "url": "https://ollama.com",
+    "description": "Run open large language models locally on your Mac.",
+    "category": "ai",
+    "tags": ["local llm", "developer"],
+    "badges": ["open-source", "freeware"],
+    "price": "open-source"
+  },
+  {
+    "id": "macwhisper",
+    "name": "MacWhisper",
+    "url": "https://goodsnooze.gumroad.com/l/macwhisper",
+    "description": "Fast, private audio transcription powered by Whisper, fully on-device.",
+    "category": "ai",
+    "tags": ["transcription", "audio"],
+    "badges": ["native"],
+    "price": "freemium"
+  },
+  {
+    "id": "iina",
+    "name": "IINA",
+    "url": "https://iina.io",
+    "description": "A modern, native media player built for macOS from the ground up.",
+    "category": "av",
+    "tags": ["video", "player", "native"],
+    "badges": ["open-source", "freeware", "native"],
+    "featured": true,
+    "price": "open-source"
+  },
+  {
+    "id": "vlc",
+    "name": "VLC",
+    "url": "https://www.videolan.org/vlc",
+    "description": "The legendary media player that plays virtually any file format.",
+    "category": "av",
+    "tags": ["video", "player"],
+    "badges": ["open-source", "freeware"],
+    "price": "open-source"
+  },
+  {
+    "id": "handbrake",
+    "name": "HandBrake",
+    "url": "https://handbrake.fr",
+    "description": "An open-source tool for converting video to nearly any modern format.",
+    "category": "av",
+    "tags": ["video", "convert"],
+    "badges": ["open-source", "freeware"],
+    "price": "open-source"
+  },
+  {
+    "id": "arc",
+    "name": "Arc",
+    "url": "https://arc.net",
+    "description": "A reimagined browser with spaces, profiles, and a tidy sidebar.",
+    "category": "browsers",
+    "tags": ["browser", "native"],
+    "badges": ["freeware", "native"],
+    "featured": true,
+    "price": "free"
+  },
+  {
+    "id": "firefox",
+    "name": "Firefox",
+    "url": "https://www.mozilla.org/firefox",
+    "description": "A fast, private, open-source browser backed by a non-profit.",
+    "category": "browsers",
+    "tags": ["browser", "privacy"],
+    "badges": ["open-source", "freeware"],
+    "price": "open-source"
+  },
+  {
+    "id": "orion",
+    "name": "Orion",
+    "url": "https://browser.kagi.com",
+    "description": "A WebKit browser with native extensions support and zero telemetry.",
+    "category": "browsers",
+    "tags": ["browser", "privacy", "native"],
+    "badges": ["freeware", "native"],
+    "price": "free"
+  },
+  {
+    "id": "1password",
+    "name": "1Password",
+    "url": "https://1password.com",
+    "description": "A trusted password manager with secure sharing and passkey support.",
+    "category": "security",
+    "tags": ["passwords"],
+    "badges": ["native"],
+    "featured": true,
+    "price": "paid"
+  },
+  {
+    "id": "littlesnitch",
+    "name": "Little Snitch",
+    "url": "https://www.obdev.at/products/littlesnitch",
+    "description": "A host-based firewall that shows and controls outgoing connections.",
+    "category": "security",
+    "tags": ["firewall", "network"],
+    "badges": ["native"],
+    "price": "paid"
+  },
+  {
+    "id": "keepassxc",
+    "name": "KeePassXC",
+    "url": "https://keepassxc.org",
+    "description": "A free, open-source, offline password manager you fully control.",
+    "category": "security",
+    "tags": ["passwords", "offline"],
+    "badges": ["open-source", "freeware"],
+    "price": "open-source"
+  }
+]

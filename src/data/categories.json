@@ -1,0 +1,10 @@
+[
+  { "id": "dev", "name": "Developer Tools", "icon": "folder", "order": 1 },
+  { "id": "utilities", "name": "Utilities", "icon": "folder", "order": 2 },
+  { "id": "design", "name": "Design & Product", "icon": "folder", "order": 3 },
+  { "id": "writing", "name": "Reading & Writing", "icon": "folder", "order": 4 },
+  { "id": "ai", "name": "AI Tools", "icon": "folder", "order": 5 },
+  { "id": "av", "name": "Audio & Video", "icon": "folder", "order": 6 },
+  { "id": "browsers", "name": "Browsers", "icon": "folder", "order": 7 },
+  { "id": "security", "name": "Security", "icon": "folder", "order": 8 }
+]

@@ -1,0 +1,39 @@
+/* ============================================================
+   Lookout — Background patterns
+   Pinstripes, dither, and candy fills. Pure CSS for now;
+   swap in pixel-art tiles from /design-refs/ when ready.
+   ============================================================ */
+
+/* Classic 50% dither (desktop wallpaper feel) */
+.pat-dither {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(45deg, rgba(0, 0, 0, 0.06) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.06) 75%),
+    linear-gradient(45deg, rgba(0, 0, 0, 0.06) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.06) 75%);
+  background-size: 4px 4px;
+  background-position: 0 0, 2px 2px;
+}
+
+/* Horizontal title-bar pinstripes */
+.pat-pinstripe {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--ink) 0,
+    var(--ink) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+/* Six-color rainbow strip (logo / dividers / hero accents) */
+.pat-rainbow {
+  background: linear-gradient(
+    to bottom,
+    var(--six-green) 0 16.66%,
+    var(--six-yellow) 16.66% 33.33%,
+    var(--six-orange) 33.33% 50%,
+    var(--six-red) 50% 66.66%,
+    var(--six-purple) 66.66% 83.33%,
+    var(--six-blue) 83.33% 100%
+  );
+}

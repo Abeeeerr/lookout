@@ -1,0 +1,206 @@
+.window {
+  background: var(--window-bg);
+  border: var(--border-w) solid var(--ink);
+  box-shadow: var(--shadow-window);
+  margin-bottom: var(--space-6);
+  overflow: hidden;
+}
+
+/* --- Title bar -------------------------------------------- */
+.titlebar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  padding: 0 8px;
+  border-bottom: var(--border-w) solid var(--ink);
+  background: var(--window-bg);
+}
+
+.stripes {
+  flex: 1;
+  height: 11px;
+  opacity: 0.9;
+}
+
+.titleText {
+  font-family: var(--font-script);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  padding: 0 10px;
+  color: var(--ink);
+}
+
+.closeBox,
+.zoomBox {
+  width: 13px;
+  height: 13px;
+  border: 2px solid var(--ink);
+  background: var(--window-bg);
+  flex-shrink: 0;
+}
+
+.zoomBox {
+  box-shadow: inset 0 0 0 2px var(--window-bg), inset 0 0 0 3px var(--ink);
+}
+
+/* --- Poster body ------------------------------------------ */
+.body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-6);
+  background:
+    radial-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px) 0 0 / 8px 8px,
+    var(--paper);
+}
+
+.logo {
+  flex-shrink: 0;
+  filter: drop-shadow(2px 3px 0 rgba(0, 0, 0, 0.18));
+}
+
+.headline {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Layered poster wordmark with offset candy "shadow" via ::before */
+.wordmark {
+  position: relative;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(48px, 9vw, 96px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -3px;
+  color: var(--ink);
+}
+
+.wordmark::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 4px;
+  top: 5px;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    var(--six-green),
+    var(--six-yellow),
+    var(--six-orange),
+    var(--six-red),
+    var(--six-purple),
+    var(--six-blue)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* --- Marquee ---------------------------------------------- */
+.marquee {
+  margin-top: var(--space-3);
+  border-top: var(--hairline) solid var(--ink);
+  border-bottom: var(--hairline) solid var(--ink);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marqueeTrack {
+  display: inline-flex;
+  will-change: transform;
+  animation: scroll 22s linear infinite;
+}
+
+.marqueeTrack span {
+  padding: 6px 0;
+  font-family: var(--font-chrome);
+  font-size: var(--text-md);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--ink-soft);
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marqueeTrack {
+    animation: none;
+  }
+}
+
+/* --- Right rail ------------------------------------------- */
+.right {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.metaText {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--ink);
+}
+
+/* --- Shelf toolbar + folder area + footer ----------------- */
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: 6px var(--space-4);
+  border-top: var(--border-w) solid var(--ink);
+  border-bottom: var(--hairline) solid var(--ink);
+  background: var(--paper-dim);
+  font-family: var(--font-chrome);
+}
+
+.toolbarTitle {
+  font-size: var(--text-md);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.toolbarHint {
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+}
+
+.shelf {
+  padding: var(--space-6) var(--space-4);
+  background:
+    radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px) 0 0 / 8px 8px,
+    var(--window-bg);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px var(--space-4);
+  border-top: var(--border-w) solid var(--ink);
+  background: var(--paper-dim);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-soft);
+}
+
+.footerRight {
+  letter-spacing: 0.5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo {
+    animation: none;
+  }
+}

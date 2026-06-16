@@ -1,0 +1,88 @@
+/* ============================================================
+   Lookout — Design Tokens
+   Colorful retro-Apple (1984–2001). Derived from /design-refs/.
+   Refine palette + metrics as the hand-drawn assets land.
+   ============================================================ */
+
+:root {
+  /* --- Base / "paper" --------------------------------------- */
+  --paper: #f4f1e8;          /* warm off-white from the refs (not pure white) */
+  --paper-dim: #e7e2d3;
+  --ink: #1a1a1a;            /* near-black linework */
+  --ink-soft: #4a4a4a;
+
+  /* --- Window chrome ---------------------------------------- */
+  --window-bg: #ffffff;
+  --window-border: var(--ink);
+  --titlebar-bg: #ffffff;
+  --chrome-gray: #c9c9c9;    /* scrollbar track / inactive */
+  --chrome-gray-dark: #8a8a8a;
+
+  /* --- Six-color rainbow (Apple logo) ----------------------- */
+  --six-green:  #61bb46;
+  --six-yellow: #fdb827;
+  --six-orange: #f5821f;
+  --six-red:    #e03a3e;
+  --six-purple: #963d97;
+  --six-blue:   #009ddc;
+
+  /* --- iMac G3 candy translucents --------------------------- */
+  --imac-bondi:      #0095b6;
+  --imac-tangerine:  #f06e28;
+  --imac-grape:      #7c5ca0;
+  --imac-lime:       #a3c940;
+  --imac-strawberry: #e35b8f;
+  --imac-blueberry:  #5b7fc7;
+
+  /* --- Semantic accents ------------------------------------- */
+  --accent: var(--six-blue);
+  --accent-hover: var(--six-orange);
+  --selection: var(--six-blue);
+
+  /* --- Typography ------------------------------------------- */
+  /* Phase 0: system fallbacks. Swap --font-chrome to a Chicago/Geneva
+     web font and --font-display to a bold poster face once licensing
+     is confirmed (see DESIGN.md §8). */
+  --font-chrome: "Geneva", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", ui-monospace, Menlo, monospace;
+  --font-script: "Dancing Script", "Brush Script MT", cursive; /* the iconic 1984 "hello" */
+
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-md: 14px;
+  --text-lg: 18px;
+  --text-xl: 28px;
+  --text-display: 56px;
+
+  /* --- Metrics ---------------------------------------------- */
+  --hairline: 1px;
+  --border-w: 2px;
+  --radius-window: 0px;      /* square / pixel-crisp; bump for System 7 softness */
+  --radius-button: 8px;      /* beveled default-button outline */
+  --menubar-h: 24px;
+  --titlebar-h: 22px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+
+  /* --- Shadow: hard offset, NO blur (retro) ----------------- */
+  --shadow-window: 2px 2px 0 0 rgba(0, 0, 0, 0.55);
+  --shadow-button: 1px 1px 0 0 var(--ink);
+
+  /* --- Z layers --------------------------------------------- */
+  --z-desktop: 0;
+  --z-icon: 10;
+  --z-window-base: 100;
+  --z-menubar: 1000;
+}
+
+/* Reduced-motion users get instant transitions (motion wired in Phase 5). */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion-med: 0ms;
+  }
+}
